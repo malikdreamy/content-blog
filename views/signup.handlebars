@@ -1,0 +1,68 @@
+<style>
+  .container {
+position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<section class='container'>
+  <div class='row justify-content-center signup_form'>
+    <div class='col-md-6 col-lg-4'>
+      <div class='card'>
+        <div class='card-body'>
+          <h3 class='card-title text-center mb-3'>Sign Up Below</h3>
+          <form>
+            <div class='mb-3'>
+              <label for='name-signup' class='form-label'>Name</label>
+              <input type='text' class='form-control' id='name-signup' />
+            </div>
+            <div class='mb-3'>
+              <label for='username-signup' class='form-label'>Email</label>
+              <input type='text' class='form-control' id='username-signup' />
+            </div>
+            <div class='mb-3'>
+              <label for='password-signup' class='form-label'>Password</label>
+              <input
+                type='password'
+                class='form-control'
+                id='password-signup'
+              />
+            </div>
+            <button type='submit' class='btn btn-primary w-100'>Sign Up</button>
+          </form>
+        </div>
+      </div>
+      <div class='card mt-3'>
+        <div class='card-body text-center'>
+          Have an account?
+          <a href='/login'>Sign in instead!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ALERT MODAL Modal-->
+<div class="modal" id="warning" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-danger">Sign-Up Requires Valid Email and Password</p>
+        <p class="text-danger">Password must be at least 8 charachters long</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/signup.js" type="text/javascript"></script>
+
+
